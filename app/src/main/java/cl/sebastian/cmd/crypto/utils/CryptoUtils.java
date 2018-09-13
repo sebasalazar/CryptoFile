@@ -1,4 +1,4 @@
-package cl.sebastian.file.crypto.utils;
+package cl.sebastian.cmd.crypto.utils;
 
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -21,8 +21,8 @@ public class CryptoUtils implements Serializable {
     private static final long serialVersionUID = 5318510220271195136L;
 
     private static final String BASE_KEY = "e^(i*PI)+1=0";
-    private static final String ALGORITHM = "AES";
-    private static final String OPERATION_MODE = "AES/CBC/PKCS5Padding";
+    private static final String ALGORITHM = "Blowfish";
+    private static final String OPERATION_MODE = "Blowfish/CBC/PKCS5Padding";
     private static final Logger LOGGER = LoggerFactory.getLogger(CryptoUtils.class);
 
     /**
